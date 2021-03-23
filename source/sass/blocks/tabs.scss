@@ -1,0 +1,36 @@
+.tabs {
+  position: relative;
+}
+
+.tabs__item {
+  display: none;
+  z-index: 99;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.tabs__item--is-active {
+  display: flex;
+}
+
+.tabs__country {
+  width: calc(40% - 100px);
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.tabs__review {
+  width: 60%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
